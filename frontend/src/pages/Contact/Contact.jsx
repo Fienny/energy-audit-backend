@@ -6,7 +6,7 @@ import Reveal from "../../components/Ui/Reveal/Reveal";
 import "./Contact.scss";
 // import qr from "../../image/qr.png";
 
-const API_URL = import.meta.env.VITE_API_URL || "";
+const API_URL = (import.meta.env.VITE_API_URL || "").replace(/\/+$/, "");
 
 export default function Contact() {
   const { t } = useTranslation();
