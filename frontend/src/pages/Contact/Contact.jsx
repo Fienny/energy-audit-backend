@@ -4,7 +4,7 @@ import Container from "../../components/Ui/Container";
 import Button from "../../components/Ui/Button";
 import Reveal from "../../components/Ui/Reveal/Reveal";
 import "./Contact.scss";
-import qr from "../../image/qr.png";
+// import qr from "../../image/qr.png";
 
 const API_URL = import.meta.env.VITE_API_URL || "";
 
@@ -86,24 +86,7 @@ export default function Contact() {
                   <b>{t("contact.info.addrLabel")}:</b> {t("contact.info.addr")}
                 </div>
               </div>
-              <div className="contactMeta__qr">
-  <div className="contactMeta__qrText">
-    <div className="contactMeta__qrTitle">{t("contact.info.qrTitle")}</div>
-    <div className="contactMeta__qrDesc">{t("contact.info.qrDesc")}</div>
-  </div>
-
-  <a
-    className="contactMeta__qrBox"
-    href="https://t.me/BenkaEnergyBot"
-    target="_blank"
-    rel="noreferrer"
-    aria-label="QR"
-  >
-    <img className="contactMeta__qrImg" src={qr} alt="QR" />
-  </a>
-</div>
-
-            </div>
+    </div>
           </Reveal>
 
           {/* FORM */}
