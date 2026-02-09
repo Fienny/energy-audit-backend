@@ -1,6 +1,6 @@
 # Energy Audit
 
-Монорепо: бэкенд + фронтенд сайта энергоаудита. Заявки с формы сохраняются в SQLite и отправляются в Telegram-группу операторам через бота.
+Монорепо: бэкенд + фронтенд сайта энергоаудита. Заявки с формы сохраняются в PostgreSQL и отправляются в Telegram-группу операторам через бота.
 
 ## Структура
 
@@ -30,7 +30,7 @@ docker-compose.yml      ← запуск всего через Docker
 ```
 Юзер заполняет форму на сайте
         ↓
-POST /api/requests  →  Сохранение в SQLite (processed=false)
+POST /api/requests  →  Сохранение в PostgreSQL (processed=false)
         ↓
 Telegram бот отправляет сообщение в группу операторов
 с кнопкой "✅ ОБРАБОТАНО"
@@ -49,27 +49,21 @@ Telegram бот отправляет сообщение в группу опер
 
 ---
 
-## Запуск локально (без Docker)
+## Запуск локально (через Docker)
 
 ```bash
 # 1. Клонировать
 git clone <repo-url>
 cd energy-audit-backend
 
-# 2. Настроить бэкенд
-cd backend
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-
-# 3. Создать .env
-cp .env.example .env
+# 2. Создать .env
+cp backend/.env.example backend/.env
 # вписать TELEGRAM_BOT_TOKEN и TELEGRAM_CHAT_ID
 
-# 4. Запустить бэкенд
-uvicorn app.main:app --host 0.0.0.0 --port 8000
+# 3. Запустить бэкенд + PostgreSQL
+docker compose up -d --build
 
-# 5. (Второй терминал) Запустить фронтенд
+# 4. (Опционально) Запустить фронтенд
 cd frontend
 npm install
 npm run dev
@@ -114,6 +108,7 @@ nano backend/.env
 ```
 TELEGRAM_BOT_TOKEN=123456:ABC-DEF...
 TELEGRAM_CHAT_ID=-100123456789
+DATABASE_URL=postgresql+asyncpg://energy:energy@db:5432/energy_audit
 ```
 
 ### 5. Запустить
