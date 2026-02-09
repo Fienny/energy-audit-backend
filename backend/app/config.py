@@ -12,5 +12,5 @@ TELEGRAM_CHAT_ID: str = os.getenv("TELEGRAM_CHAT_ID", "")
 
 DATABASE_URL: str = os.getenv(
     "DATABASE_URL",
-    "postgresql+asyncpg://energy:energy@localhost:5432/energy_audit",
+    f"sqlite+aiosqlite:///{BASE_DIR / 'data' / 'db.sqlite3'}",
 )

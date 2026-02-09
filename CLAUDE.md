@@ -2,11 +2,11 @@
 
 ## Что это
 
-Монорепо: бэкенд + фронтенд сайта энергоаудита. Заявки с формы сохраняются в PostgreSQL и отправляются в Telegram-группу операторам через бота.
+Монорепо: бэкенд + фронтенд сайта энергоаудита. Заявки с формы сохраняются в SQLite и отправляются в Telegram-группу операторам через бота.
 
 ## Стек
 
-- **Бэкенд:** Python 3.11+, FastAPI, SQLAlchemy (async), PostgreSQL (asyncpg), python-telegram-bot
+- **Бэкенд:** Python 3.11+, FastAPI, SQLAlchemy (async), SQLite (aiosqlite), python-telegram-bot
 - **Фронтенд:** React 19, Vite, react-router-dom, i18next, SCSS
 - **Деплой:** DigitalOcean Droplet, Docker, docker-compose
 
@@ -53,12 +53,10 @@ docker-compose.yml            — запуск через Docker
 
 - `TELEGRAM_BOT_TOKEN` — токен бота от BotFather
 - `TELEGRAM_CHAT_ID` — ID группы операторов
-- `DATABASE_URL` — строка подключения к PostgreSQL
-
 ## Ключевые решения
 
 - **Docker** — деплой через `docker compose up -d --build`
-- **PostgreSQL** — через Docker-контейнер, данные в Docker volume `pg-data`
+- **SQLite** — достаточно для текущей нагрузки, файл `data/db.sqlite3` (Docker volume)
 - **Бот через polling** (не webhook) — проще, не требует домена/SSL
 - **Fire-and-forget** отправка в Telegram (`asyncio.create_task`) — не блокирует ответ
 - **CORS разрешён для всех** (`allow_origins=["*"]`)

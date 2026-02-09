@@ -1,6 +1,6 @@
 # Energy Audit
 
-Монорепо: бэкенд + фронтенд сайта энергоаудита. Заявки с формы сохраняются в PostgreSQL и отправляются в Telegram-группу операторам через бота.
+Монорепо: бэкенд + фронтенд сайта энергоаудита. Заявки с формы сохраняются в SQLite и отправляются в Telegram-группу операторам через бота.
 
 ## Структура
 
@@ -30,7 +30,7 @@ docker-compose.yml      ← запуск всего через Docker
 ```
 Юзер заполняет форму на сайте
         ↓
-POST /api/requests  →  Сохранение в PostgreSQL (processed=false)
+POST /api/requests  →  Сохранение в SQLite (processed=false)
         ↓
 Telegram бот отправляет сообщение в группу операторов
 с кнопкой "✅ ОБРАБОТАНО"
@@ -60,7 +60,7 @@ cd energy-audit-backend
 cp backend/.env.example backend/.env
 # вписать TELEGRAM_BOT_TOKEN и TELEGRAM_CHAT_ID
 
-# 3. Запустить бэкенд + PostgreSQL
+# 3. Запустить бэкенд
 docker compose up -d --build
 
 # 4. (Опционально) Запустить фронтенд
@@ -108,7 +108,6 @@ nano backend/.env
 ```
 TELEGRAM_BOT_TOKEN=123456:ABC-DEF...
 TELEGRAM_CHAT_ID=-100123456789
-DATABASE_URL=postgresql+asyncpg://energy:energy@db:5432/energy_audit
 ```
 
 ### 5. Запустить
