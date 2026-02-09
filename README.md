@@ -171,3 +171,38 @@ nginx -t && systemctl restart nginx
 # HTTPS
 certbot --nginx -d your-domain.com
 ```
+
+---
+
+## Деплой фронтенда (на обычный хостинг)
+
+Фронтенд — обычный хостинг (статика). Бэкенд — дроплет.
+
+### 1. Собрать
+
+```bash
+cd frontend
+npm install
+VITE_API_URL=http://<droplet-ip>:8000 npm run build
+```
+
+> Если на бэкенде настроен домен: `VITE_API_URL=https://api.your-domain.com`
+
+### 2. Залить на хостинг
+
+Содержимое папки `frontend/dist/` залить в корень хостинга через FTP / файловый менеджер.
+
+### 3. SPA-роутинг
+
+Если хостинг на Apache — создать `.htaccess` в корне:
+
+```apache
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+```
+
+Если Nginx — добавить `try_files $uri /index.html;` в конфиг.
