@@ -1,0 +1,492 @@
+{
+  "common": {
+    "more": "Batafsil"
+  },
+
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "services": "Xizmatlarimiz",
+    "industries": "Sohaviy yechimlar",
+    "projects": "Bajarilgan loyihalar",
+    "contact": "Kontaktlar"
+  },
+
+  "cta": {
+    "consult": "Maslahat olish",
+    "startProject": "Loyihani boshlash",
+    "contactUs": "Bog‘lanish"
+  },
+
+  "home": {
+    "badge": "2019-yildan beri bozorda",
+    "title": "Bino va inshootlarni professional loyihalash",
+    "lead": "Tajribali muhandislar jamoasidan sifatli loyiha-smeta hujjatlarini oling.",
+
+    "stats": {
+      "a": { "n": "30+", "t": "Bajarilgan obyektlar" },
+      "b": { "n": "25+", "t": "Muhandislar jamoasi" },
+      "c": { "n": "6+", "t": "Yillik tajriba" }
+    },
+
+    "heroCard": {
+      "title": "To‘liq loyihalash sikli",
+      "text": "Tekshiruvdan mualliflik nazoratigacha"
+    },
+
+    "servicesTitle": "Loyihalash xizmatlarining to‘liq majmuasi",
+    "servicesLead": "Har qanday murakkablikdagi obyektlar uchun professional xizmatlar.",
+    "services": {
+      "items": [
+        { "title": "Texnik tekshiruv", "desc": "Binolar va inshootlarni kompleks tekshirish." },
+        { "title": "Binolarni loyihalash", "desc": "Yangi qurilish va rekonstruksiya loyihalari." },
+        { "title": "Loyiha-smeta hujjatlari", "desc": "Zamonaviy standartlarga mos hujjatlar." },
+        { "title": "Mualliflik nazorati", "desc": "Loyiha bajarilishini nazorat qilish." },
+        { "title": "Xorijiy loyihalarni moslashtirish", "desc": "Mahalliy me’yorlarga moslashtirish." },
+        { "title": "Texnik hamrohlik", "desc": "Qurilish loyihalarini qo‘llab-quvvatlash." }
+      ]
+    },
+
+    "whyKicker": "Nega bizni tanlashadi",
+    "whyTitle": "Har bir loyiha uchun kompleks yondashuv",
+    "whyLead": "Muhandislar jamoasi va to‘liq xizmatlar.",
+    "learnMore": "Biz haqimizda",
+    "why": {
+      "items": [
+        { "title": "Professional jamoa", "desc": "Amaliy tajribaga ega muhandislar." },
+        { "title": "Yuqori sifat", "desc": "Me’yoriy hujjatlarga moslik." },
+        { "title": "To‘liq sikl", "desc": "Tekshiruvdan mualliflik nazoratigacha." }
+      ]
+    },
+
+    "processKicker": "Jarayon",
+    "processTitle": "Qanday ishlaymiz",
+    "process": {
+      "items": [
+        { "n": "01", "title": "Maslahat", "desc": "Talablarni aniqlaymiz." },
+        { "n": "02", "title": "Tekshiruv", "desc": "Boshlang‘ich ma’lumotlarni yig‘amiz." },
+        { "n": "03", "title": "Loyihalash", "desc": "Hujjatlarni tayyorlaymiz." },
+        { "n": "04", "title": "Nazorat", "desc": "Loyihani kuzatamiz." }
+      ]
+    },
+
+    "specKicker": "Loyiha turlari",
+    "specTitle": "Bizning ixtisoslashuv",
+    "viewProjects": "Loyihalarni ko‘rish",
+    "spec": {
+      "items": [
+        { "title": "Turar joy binolari", "desc": "Ko‘p qavatli uylar." },
+        { "title": "Jamoat binolari", "desc": "Ofislar va savdo markazlari." },
+        { "title": "Sanoat obyektlari", "desc": "Zavod va omborlar." }
+      ]
+    },
+
+    "finalTitle": "Loyihangizni muhokama qilamizmi?",
+    "finalLead": "Bepul maslahat uchun bog‘laning."
+  },
+
+  "aboutPage": {
+    "kicker": "Biz haqimizda",
+    "title": "Benka — loyihalash va muhandislik yechimlari",
+    "lead": "Biz loyiha-smeta hujjatlarini ishlab chiqamiz, texnik tekshiruv o‘tkazamiz va loyihalarni amalga oshirish bosqichida hamrohlik qilamiz.",
+    "viewProjects": "Loyihalarni ko‘rish",
+
+    "media": {
+      "title": "Muhandislik yondashuvi",
+      "text": "Standartlarga amal qilib, loyihani natijaga olib boramiz."
+    },
+
+    "stats": [
+      { "n": "30+", "t": "Loyihalar", "d": "Turli obyekt turlarida" },
+      { "n": "25+", "t": "Muhandislar", "d": "Jamoa va hamkorlar" },
+      { "n": "6+", "t": "Yil tajriba", "d": "Loyihalash bozorida" }
+    ],
+
+    "featuresKicker": "Tamoyillarimiz",
+    "featuresTitle": "Nega bizga ishonishadi",
+    "featuresLead": "Sifat, muddat va shaffof muloqot.",
+    "features": [
+      { "title": "Tizimli ish", "desc": "Bosqichlar va natijalarni aniq belgilaymiz." },
+      { "title": "Sifat nazorati", "desc": "Ichki tekshiruv va me’yorlarga moslik." },
+      { "title": "Amaliy yechimlar", "desc": "Quriladigan va byudjetga mos yechimlar." },
+      { "title": "Aloqa", "desc": "Buyurtmachi bilan doimiy muloqot." }
+    ],
+
+    "stepsKicker": "Qanday ishlaymiz",
+    "stepsTitle": "Hamkorlik jarayoni",
+    "stepsLead": "Maslahatdan realizatsiyagacha.",
+    "steps": [
+      { "n": "01", "title": "Brif", "desc": "Boshlang‘ich ma’lumotlarni yig‘amiz." },
+      { "n": "02", "title": "Ma’lumotlar", "desc": "Tekshiruv va tahlil." },
+      { "n": "03", "title": "Loyihalash", "desc": "Loyiha hujjatlarini tayyorlaymiz." },
+      { "n": "04", "title": "Hamrohlik", "desc": "Amalga oshirishda yordam." }
+    ],
+
+    "cta": {
+      "title": "Maslahat kerakmi?",
+      "lead": "Yozing — ish rejasi va muddatni taklif qilamiz."
+    }
+  },
+
+  "services": {
+    "kicker": "Xizmatlar",
+    "title": "Biz nimalarni qilamiz",
+    "lead": "Muhandislik va loyihalash xizmatlari majmuasi.",
+    "list": {
+      "items": [
+        { "title": "Texnik tekshiruv", "desc": "Konstruktsiyalar holatini baholash.", "meta": "Hisobot" },
+        { "title": "Loyihalash", "desc": "Arxitektura va muhandislik bo‘limlari.", "meta": "Me’yorlarga mos" },
+        { "title": "Smeta", "desc": "Smeta hujjatlari.", "meta": "Moslashtirilgan" }
+      ]
+    },
+    "pack": {
+      "items": [
+        { "title": "Start", "desc": "Maslahat va reja.", "meta": "Boshlash uchun" },
+        { "title": "Kalit topshirish", "desc": "To‘liq loyiha sikli.", "meta": "Maksimal" }
+      ]
+    }
+  },
+
+  "industries": {
+    "kicker": "Sohalar",
+    "title": "Sohaviy yechimlar",
+    "lead": "Turli obyekt turlari bilan ishlaymiz.",
+    "viewProjects": "Loyihalarni ko‘rish",
+    "items": [
+      { "title": "Turar joy", "desc": "Uy-joy obyektlari.", "meta": "Qulaylik" },
+      { "title": "Tijorat", "desc": "Ofis va savdo binolari.", "meta": "Samaradorlik" },
+      { "title": "Sanoat", "desc": "Ishlab chiqarish obyektlari.", "meta": "Texnologiya" }
+    ]
+  },
+
+  "projects": {
+    "kicker": "Portfolio",
+    "title": "Bajarilgan loyihalar",
+    "lead": "Tayyor loyihalar misollari.",
+    "items": [
+      { "title": "Loyiha №1", "desc": "Loyiha tavsifi.", "meta": "2023" },
+      { "title": "Loyiha №2", "desc": "Loyiha tavsifi.", "meta": "2024" }
+    ]
+  },
+
+  "contact": {
+    "kicker": "Kontaktlar",
+    "title": "Biz bilan bog‘laning",
+    "lead": "So‘rov qoldiring — javob beramiz.",
+    "info": {
+      "title": "Kontaktlarimiz",
+      "desc": "Istalgan qulay usulda bog‘laning.",
+      "phoneLabel": "Telefon",
+      "emailLabel": "Email",
+      "addrLabel": "Manzil",
+      "addr": "Toshkent, O‘zbekiston",
+"qrTitle": "Buyurtma uchun QR-kod",
+"qrDesc": "Buyurtma berish uchun skaner qiling."
+
+    },
+        "form": {
+      "title": "So‘rov qoldirish",
+      "desc": "Formani to‘ldiring, mutaxassisimiz siz bilan bog‘lanadi.",
+      "name": "Ismingiz",
+      "phone": "Telefon raqam",
+      "email": "Elektron pochta",
+      "message": "Izoh yoki loyiha tavsifi",
+      "submit": "So‘rov yuborish",
+      "sent": "Rahmat! So‘rovingiz muvaffaqiyatli yuborildi."
+    },
+    "map": {
+      "title": "Ofisimiz xaritada",
+      "desc": "Marshrut tuzing va tashrif buyuring — sizni kutamiz.",
+      "open": "Xaritada ochish"
+    }
+  },
+
+  "footer": {
+    "desc": "Binolar va inshootlarni professional loyihalash.",
+    "linksTitle": "Tezkor havolalar",
+    "contactsTitle": "Aloqa",
+    "address": "Toshkent, Oʻzbekiston",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "langTitle": "Til"
+  },
+  "servicesPage": {
+    "kicker": "Xizmatlarimiz",
+    "heroTitle": "Qurilish xizmatlarining to‘liq sikli",
+    "heroLead": "Konsepsiyadan amalga oshirishgacha — biz turar-joy, tijorat va sanoat obyektlari uchun kompleks yechimlar taqdim etamiz. Tajriba va professionallik har bir bosqichda sifatni kafolatlaydi.",
+    "heroBtnView": "Xizmatlarni ko‘rish",
+    "heroBtnContact": "Biz bilan bog‘lanish",
+
+    "mainTitleKicker": "Nimani taklif qilamiz",
+    "mainTitle": "Professional xizmatlar majmuasi",
+    "serviceLabel": "Xizmat",
+    "orderService": "Xizmatga buyurtma",
+
+    "mainServices": [
+      {
+        "title": "Texnik tekshiruv",
+        "desc": "Bino va inshootlarning texnik holatini kompleks baholaymiz. Yashirin nuqsonlarni aniqlaymiz, konstruksiyalarning ko‘tarish qobiliyatini baholaymiz va ekspluatatsiya yoki rekonstruksiya bo‘yicha tavsiyalar beramiz.",
+        "bullets": [
+          "Ko‘taruvchi konstruksiyalarni tekshirish",
+          "Muhandislik tizimlarini diagnostika qilish",
+          "Poydevor va asoslarni baholash"
+        ]
+      },
+      {
+        "title": "Loyihalash",
+        "desc": "Zamonaviy BIM-texnologiyalaridan foydalangan holda har qanday murakkablikdagi loyiha hujjatlarini ishlab chiqamiz. Buyurtmachi talablari va me’yorlarga mos funksional hamda estetik yechimlar yaratamiz.",
+        "bullets": [
+          "Arxitektura loyihalash",
+          "Konstruktiv yechimlar",
+          "Muhandislik tizimlari (V&K, O&V, EOM)"
+        ]
+      },
+      {
+        "title": "Hujjatlarni ishlab chiqish",
+        "desc": "Amaldagi me’yor va standartlarga muvofiq loyiha hamda ishchi hujjatlarning to‘liq to‘plamini tayyorlaymiz. Ekspertizadan o‘tish va zarur kelishuvlarni olishda yordam beramiz.",
+        "bullets": [
+          "Ishchi hujjatlar",
+          "Smeta va texnik-iqtisodiy asos (TIA)",
+          "Nazorat organlari bilan kelishuv"
+        ]
+      },
+      {
+        "title": "Mualliflik nazorati",
+        "desc": "Qurilishning loyiha hujjatlariga muvofiqligini nazorat qilamiz. Mutaxassislarimiz obyektga chiqadi va yuzaga keladigan masalalarni tezkor hal qilishga yordam beradi.",
+        "bullets": [
+          "Loyihaga muvofiqlik nazorati",
+          "Zarurat bo‘lsa o‘zgartirishlar kiritish",
+          "Qurilishning barcha bosqichlarida maslahat"
+        ]
+      }
+    ],
+
+    "extraKicker": "Qo‘shimcha xizmatlar",
+    "extraTitle": "Kengaytirilgan imkoniyatlar",
+    "more": "Batafsil",
+    "extraServices": [
+      {
+        "title": "Bosh pudrat",
+        "desc": "Qurilishni “kalit topshirish” asosida to‘liq boshqarish — ish boshlanishidan obyektni topshirishgacha, sifat va muddat kafolati bilan."
+      },
+      {
+        "title": "Rekonstruksiya va restavratsiya",
+        "desc": "Amaldagi binolarni modernizatsiya qilish: arxitektura qiymatini saqlagan holda ekspluatatsion ko‘rsatkichlarni yaxshilash."
+      },
+      {
+        "title": "Qurilish nazorati",
+        "desc": "Loyihani amalga oshirishning barcha bosqichlarida qurilish-montaj ishlarining sifatini mustaqil baholash."
+      },
+      {
+        "title": "BIM-modellashtirish",
+        "desc": "Xatolarni kamaytirish va loyihani samarali boshqarish uchun binolarning 3D axborot modellarini yaratish."
+      },
+      {
+        "title": "Smeta ishlari",
+        "desc": "Barcha xarajat moddalari bo‘yicha batafsil hisob-kitoblar bilan qurilish qiymatini professional hisoblash."
+      },
+      {
+        "title": "Ekspert maslahatlari",
+        "desc": "Tajribali muhandis va arxitektorlardan loyihaning barcha bosqichlarida ekspert qo‘llab-quvvatlash."
+      }
+    ],
+
+    "process": {
+      "kicker": "Qanday ishlaymiz",
+      "title": "Shaffof hamkorlik jarayoni",
+      "lead": "Har bir bosqichda sifat va muddatni ta’minlaydigan aniq ish metodologiyasini ishlab chiqqanmiz.",
+      "items": [
+        { "n": "1", "title": "Maslahat", "desc": "Maqsadlar, talablar va kutgan natijalarni muhokama qilamiz" },
+        { "n": "2", "title": "Tahlil", "desc": "Texnik hujjatlar va obyekt xususiyatlarini o‘rganamiz" },
+        { "n": "3", "title": "Tijorat taklifi", "desc": "Batafsil smeta va ish rejasini tayyorlaymiz" },
+        { "n": "4", "title": "Amalga oshirish", "desc": "Har bosqichda sifat nazorati bilan ishlarni bajaramiz" },
+        { "n": "5", "title": "Topshirish", "desc": "Obyektni to‘liq hujjatlar to‘plami bilan topshiramiz" }
+      ]
+    },
+
+    "why": {
+      "title": "Nega bizni tanlashadi",
+      "items": [
+        { "title": "Muddatlarga rioya", "desc": "Belgilangan muddatlarda bajarish kafolati" },
+        { "title": "Sifat kafolati", "desc": "Barcha ish turlari uchun rasmiy kafolat" },
+        { "title": "Tajribali jamoa", "desc": "200+ malakali mutaxassislar" },
+        { "title": "24/7 qo‘llab-quvvatlash", "desc": "Masalalarni hal qilish uchun doim aloqadamiz" }
+      ]
+    },
+
+    "types": {
+      "kicker": "Obyekt turlari",
+      "title": "Har qanday murakkablikdagi loyihalar",
+      "lead": "Tajriba barcha segmentlarni qamrab oladi — turar-joy majmualaridan yirik sanoat obyektlarigacha.",
+      "examples": "Loyihalar misoli",
+      "items": [
+        {
+          "title": "Turar-joy majmualari",
+          "desc": "Zamonaviy turar-joy binolarini rivojlangan infratuzilma bilan loyihalash va qurish.",
+          "bullets": ["Ko‘p qavatli uylar", "Taunxaus va kottejlar", "Premium turar-joy"]
+        },
+        {
+          "title": "Tijorat obyektlari",
+          "desc": "Biznes va savdo uchun har qanday formatda funksional makonlar yaratish.",
+          "bullets": ["Ofis markazlari", "Savdo komplekslari", "Mehmonxona va otellar"]
+        },
+        {
+          "title": "Sanoat obyektlari",
+          "desc": "Biznes xususiyatlarini hisobga olgan holda ishlab chiqarish va ombor majmualarini loyihalash.",
+          "bullets": ["Ishlab chiqarish sexlari", "Ombor majmualari", "Logistika markazlari"]
+        }
+      ],
+      "alsoTitle": "Shuningdek ishlaymiz",
+      "also": [
+        "Ta’lim muassasalari",
+        "Tibbiy markazlar",
+        "Sport obyektlari",
+        "Infratuzilma loyihalari"
+      ]
+    },
+
+    "cta": {
+      "titleLine1": "Loyihangizni muhokama qilaylik",
+      "titleLine2": "hoziroq",
+      "lead": "Mutaxassislarimizdan bepul maslahat oling. Talablaringizni tahlil qilib, byudjet va muddatlarni hisobga olgan holda optimal yechim taklif qilamiz.",
+      "metrics": [
+        { "n": "24 soat", "t": "Tijorat taklifini tayyorlash" },
+        { "n": "100%", "t": "Me’yor va standartlarga moslik" },
+        { "n": "500+", "t": "Muvaffaqiyatli loyihalar" }
+      ],
+      "emailLabel": "Email",
+      "officeLabel": "Ofis",
+      "hoursLabel": "Ish vaqti",
+      "officeValue": "Toshkent, O‘zbekiston",
+      "hoursValue": "Du-Ju: 9:00 - 18:00"
+    }
+  },
+   "industriesPage": {
+    "kicker": "Kompleks injiniring yechimlari",
+    "title": "Biznesingiz uchun\nsohaviy yechimlar",
+    "lead": "Har bir soha uchun moslashtirilgan injiniring yechimlari. Biz 4 ta murakkablik toifasidagi obyektlarni yuqori samaradorlik va professionallik bilan loyihalaymiz.",
+    "btnProjects": "Loyihalarni ko‘rish",
+
+    "stats": [
+      { "n": "4", "t": "Murakkablik toifasi" },
+      { "n": "15+", "t": "Injiniring xizmatlari" },
+      { "n": "100%", "t": "Kompleks yondashuv" },
+      { "n": "24/7", "t": "Texnik qo‘llab-quvvatlash" }
+    ],
+
+    "solutionsKicker": "Barcha sohalar uchun yechimlar",
+    "solutionsTitle": "Turli sohalar uchun\nkompleks yechimlar",
+    "solutionsLead": "Biz har bir sohaning xususiyatlarini inobatga olgan holda to‘liq injiniring xizmatlarini taklif etamiz",
+    "solutions": [
+      {
+        "title": "Turar joy ko‘chmas mulki",
+        "desc": "Turar joy majmualari, ko‘p qavatli uylar va kottej shaharchalarini to‘liq injiniring infratuzilmasi bilan loyihalash",
+        "tags": ["Arxitektura", "Injiniring", "3D vizualizatsiya"]
+      },
+      {
+        "title": "Tijorat ko‘chmas mulki",
+        "desc": "Zamonaviy injiniring tizimlariga ega biznes markazlar, savdo markazlari va ofis binolari",
+        "tags": ["HVAC", "Elektr ta’minoti", "Yong‘in xavfsizligi"]
+      },
+      {
+        "title": "Sanoat va logistika",
+        "desc": "Ishlab chiqarish obyektlari, omborlar va logistika markazlari",
+        "tags": ["Texnologiyalar", "Bosh reja", "Konstruktsiyalar"]
+      },
+      {
+        "title": "Sog‘liqni saqlash",
+        "desc": "Maxsus talablarni hisobga olgan holda tibbiyot markazlari, shifoxonalar va poliklinikalar",
+        "tags": ["Ventilyatsiya", "Suv ta’minoti", "Signalizatsiya"]
+      },
+      {
+        "title": "Ta’lim",
+        "desc": "Zamonaviy infratuzilmaga ega maktablar, universitetlar, bog‘chalar va o‘quv markazlari",
+        "tags": ["Yoritish", "Xavfsizlik", "Aloqa"]
+      },
+      {
+        "title": "Mehmonxona biznesi",
+        "desc": "Yuqori qulaylik darajasiga ega mehmonxonalar, kurortlar va turistik majmualar",
+        "tags": ["Konditsioner", "Isitish", "Gaz ta’minoti"]
+      }
+    ],
+
+    "servicesKicker": "Xizmatlarning to‘liq spektri",
+    "servicesTitle": "Loyihangiz uchun\nkompleks injiniring xizmatlari",
+    "servicesLead": "Biz 4 ta murakkablik toifasidagi obyektlar bilan ishlaymiz. Professional jamoa, moslashuvchan yondashuv va yuqori sifat",
+    "services": [
+      {
+        "title": "Arxitektura va qurilish yechimlari",
+        "desc": "Norma va standartlarga mos arxitektura va qurilish yechimlarini ishlab chiqish"
+      },
+      {
+        "title": "Konstruktsiyalarni hisoblash",
+        "desc": "Tayanch konstruktsiyalar, poydevorlar va boshqa elementlarning professional hisob-kitoblari"
+      },
+      {
+        "title": "Elektr ta’minoti va elektr tizimlari",
+        "desc": "Elektr ta’minoti, elektr uskunalari va yoritish tizimlarini loyihalash"
+      },
+      {
+        "title": "Isitish, ventilyatsiya va konditsioner",
+        "desc": "Qulay mikroiqlimni ta’minlovchi zamonaviy HVAC tizimlari"
+      },
+      {
+        "title": "Suv ta’minoti va kanalizatsiya",
+        "desc": "Suv ta’minoti, oqova suv va tozalash tizimlarini loyihalash"
+      },
+      {
+        "title": "Issiqlik va gaz ta’minoti",
+        "desc": "Har qanday murakkablikdagi issiqlik va gaz ta’minoti yechimlari"
+      },
+      {
+        "title": "Yong‘in avtomatikasi va signalizatsiya",
+        "desc": "Yong‘in xavfsizligi, avtomatika va signalizatsiya tizimlarini loyihalash"
+      },
+      {
+        "title": "Aloqa va xavfsizlik tizimlari",
+        "desc": "Zamonaviy aloqa, telefon va qo‘riqlash tizimlari"
+      },
+      {
+        "title": "Bosh reja va 3D vizualizatsiya",
+        "desc": "Bosh reja, eskiz loyihalar va realistik 3D vizualizatsiya"
+      }
+    ],
+
+    "why": {
+      "kicker": "Bizning afzalliklarimiz",
+      "title": "Nima uchun bizni tanlashadi",
+      "lead": "Professionalizm, tajriba va har bir loyihaga individual yondashuv",
+      "items": [
+        {
+          "title": "Asoslangan injiniring yondashuvi",
+          "desc": "Har bir yechim hisob-kitoblar, me’yorlar va tajriba bilan asoslanadi"
+        },
+        {
+          "title": "Yuqori xizmat darajasi",
+          "desc": "Xalqaro standartlarga mos premium injiniring xizmatlari"
+        },
+        {
+          "title": "Moslashuvchan yechimlar",
+          "desc": "Murakkab texnik masalalar uchun optimal yechimlar"
+        },
+        {
+          "title": "Keng qamrovli mutaxassislik",
+          "desc": "Barcha injiniring yo‘nalishlarida chuqur bilimga ega jamoa"
+        },
+        {
+          "title": "4 murakkablik toifasi",
+          "desc": "Oddiydan tortib noyob loyihalargacha ishlaymiz"
+        },
+        {
+          "title": "To‘liq xizmat",
+          "desc": "Eskizdan mualliflik nazoratigacha to‘liq loyiha qo‘llab-quvvatlovi"
+        }
+      ]
+    },
+
+    "cta": {
+      "title": "Loyihangizni muhokama qilishga tayyormisiz?",
+      "lead": "Maslahat va tijorat taklifi uchun biz bilan bog‘laning",
+      "btn": "Biz bilan bog‘lanish"
+    }
+  }
+}

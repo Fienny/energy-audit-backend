@@ -1,0 +1,493 @@
+{
+  "common": {
+    "more": "Learn more"
+  },
+
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "industries": "Industry solutions",
+    "projects": "Projects",
+    "contact": "Contacts"
+  },
+
+  "cta": {
+    "consult": "Get a consultation",
+    "startProject": "Start a project",
+    "contactUs": "Contact us"
+  },
+
+  "home": {
+    "badge": "On the market since 2019",
+    "title": "Professional design of buildings and structures",
+    "lead": "Get high-quality design and estimate documentation from an experienced engineering team.",
+
+    "stats": {
+      "a": { "n": "30+", "t": "Completed facilities" },
+      "b": { "n": "25+", "t": "Engineers in team" },
+      "c": { "n": "6+", "t": "Years of experience" }
+    },
+
+    "heroCard": {
+      "title": "Full design cycle",
+      "text": "From inspection to author supervision"
+    },
+
+    "servicesTitle": "Full range of design services",
+    "servicesLead": "Professional services for projects of any complexity.",
+    "services": {
+      "items": [
+        { "title": "Technical inspection", "desc": "Comprehensive inspection of buildings and structures." },
+        { "title": "Building design", "desc": "Design for new construction and reconstruction." },
+        { "title": "Design & estimate documentation", "desc": "Documentation according to modern standards." },
+        { "title": "Author supervision", "desc": "Control of project implementation." },
+        { "title": "Foreign project adaptation", "desc": "Adaptation to local regulations." },
+        { "title": "Technical support", "desc": "Support of construction projects." }
+      ]
+    },
+
+    "whyKicker": "Why choose us",
+    "whyTitle": "A comprehensive approach to every project",
+    "whyLead": "Engineering expertise and full-cycle services.",
+    "learnMore": "Learn more",
+    "why": {
+      "items": [
+        { "title": "Professional team", "desc": "Experienced engineers with real practice." },
+        { "title": "High quality", "desc": "Compliance with standards and regulations." },
+        { "title": "Full cycle", "desc": "From inspection to supervision." }
+      ]
+    },
+
+    "processKicker": "Our process",
+    "processTitle": "How we work",
+    "process": {
+      "items": [
+        { "n": "01", "title": "Consultation", "desc": "We define requirements and scope." },
+        { "n": "02", "title": "Inspection", "desc": "We collect initial data." },
+        { "n": "03", "title": "Design", "desc": "We prepare project documentation." },
+        { "n": "04", "title": "Supervision", "desc": "We control implementation." }
+      ]
+    },
+
+    "specKicker": "Project types",
+    "specTitle": "Our specialization",
+    "viewProjects": "View projects",
+    "spec": {
+      "items": [
+        { "title": "Residential buildings", "desc": "Apartment buildings and residences." },
+        { "title": "Public buildings", "desc": "Offices and shopping centers." },
+        { "title": "Industrial facilities", "desc": "Factories and warehouses." }
+      ]
+    },
+
+    "finalTitle": "Ready to discuss your project?",
+    "finalLead": "Contact us for a free consultation."
+  },
+
+  "aboutPage": {
+    "kicker": "About",
+    "title": "Benka — design & engineering solutions",
+    "lead": "We develop design and estimate documentation, conduct technical inspections, and support projects during implementation.",
+    "viewProjects": "View projects",
+
+    "media": {
+      "title": "Engineering approach",
+      "text": "We follow standards and deliver practical results."
+    },
+
+    "stats": [
+      { "n": "30+", "t": "Projects", "d": "Across different facility types" },
+      { "n": "25+", "t": "Engineers", "d": "In our team and partner network" },
+      { "n": "6+", "t": "Years", "d": "On the design market" }
+    ],
+
+    "featuresKicker": "Our principles",
+    "featuresTitle": "Why clients trust us",
+    "featuresLead": "Quality, timelines, and clear communication.",
+    "features": [
+      { "title": "Systematic approach", "desc": "Clear stages and deliverables." },
+      { "title": "Quality control", "desc": "Internal reviews and compliance." },
+      { "title": "Practical solutions", "desc": "Buildable solutions within budget." },
+      { "title": "Communication", "desc": "We stay in touch with clients." }
+    ],
+
+    "stepsKicker": "How we work",
+    "stepsTitle": "Collaboration process",
+    "stepsLead": "A clear path from idea to implementation.",
+    "steps": [
+      { "n": "01", "title": "Brief", "desc": "We gather initial inputs." },
+      { "n": "02", "title": "Initial data", "desc": "Inspection and analysis." },
+      { "n": "03", "title": "Design", "desc": "Preparation of project solutions." },
+      { "n": "04", "title": "Support", "desc": "Assistance during implementation." }
+    ],
+
+    "cta": {
+      "title": "Need a consultation?",
+      "lead": "Contact us — we’ll suggest a plan and timeline."
+    }
+  },
+
+  "services": {
+    "kicker": "Services",
+    "title": "What we do",
+    "lead": "A full range of engineering and design services.",
+    "list": {
+      "items": [
+        { "title": "Technical inspection", "desc": "Assessment of structural condition.", "meta": "Report" },
+        { "title": "Design", "desc": "Architecture and engineering sections.", "meta": "Code-compliant" },
+        { "title": "Estimates", "desc": "Estimate documentation.", "meta": "Tailored" }
+      ]
+    },
+    "pack": {
+      "items": [
+        { "title": "Starter", "desc": "Consultation and plan.", "meta": "To begin" },
+        { "title": "Turnkey", "desc": "Full design cycle.", "meta": "Maximum" }
+      ]
+    }
+  },
+
+  "industries": {
+    "kicker": "Industries",
+    "title": "Industry solutions",
+    "lead": "We work with various facility types.",
+    "viewProjects": "View projects",
+    "items": [
+      { "title": "Residential", "desc": "Housing projects.", "meta": "Comfort" },
+      { "title": "Commercial", "desc": "Offices and retail.", "meta": "Efficiency" },
+      { "title": "Industrial", "desc": "Manufacturing facilities.", "meta": "Technology" }
+    ]
+  },
+
+  "projects": {
+    "kicker": "Portfolio",
+    "title": "Completed projects",
+    "lead": "Examples of delivered projects.",
+    "items": [
+      { "title": "Project #1", "desc": "Project description.", "meta": "2023" },
+      { "title": "Project #2", "desc": "Project description.", "meta": "2024" }
+    ]
+  },
+
+  "contact": {
+    "kicker": "Contacts",
+    "title": "Get in touch",
+    "lead": "Leave a request — we will reply.",
+    "info": {
+      "title": "Our contacts",
+      "desc": "Reach us in any convenient way.",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "addrLabel": "Address",
+      "addr": "Tashkent, Uzbekistan",
+"qrTitle": "QR code for ordering",
+"qrDesc": "Scan to place an order."
+
+      
+    },
+    "form": {
+      "title": "Send a request",
+      "desc": "Fill out the form and our specialist will contact you.",
+      "name": "Your name",
+      "phone": "Phone number",
+      "email": "Email address",
+      "message": "Comment or project description",
+      "submit": "Submit request",
+      "sent": "Thank you! Your request has been sent successfully."
+    },
+    "map": {
+      "title": "Our office on the map",
+      "desc": "Build a route and visit us — we’ll be happy to meet you.",
+      "open": "Open in maps"
+    }
+  },
+
+  "footer": {
+    "desc": "Professional design of buildings and structures.",
+    "linksTitle": "Quick links",
+    "contactsTitle": "Contacts",
+    "address": "Tashkent, Uzbekistan",
+    "rights": "All rights reserved.",
+    "langTitle": "Language"
+  },
+  "servicesPage": {
+    "kicker": "Services",
+    "heroTitle": "Full-cycle construction services",
+    "heroLead": "From concept to delivery — we provide end-to-end solutions for residential, commercial and industrial facilities. Our experience and professionalism ensure quality at every stage.",
+    "heroBtnView": "View services",
+    "heroBtnContact": "Contact us",
+
+    "mainTitleKicker": "What we offer",
+    "mainTitle": "A complete set of professional services",
+    "serviceLabel": "Service",
+    "orderService": "Request service",
+
+    "mainServices": [
+      {
+        "title": "Technical inspection",
+        "desc": "We perform a comprehensive assessment of buildings and structures. We identify hidden defects, evaluate load-bearing capacity and provide recommendations for further operation or reconstruction.",
+        "bullets": [
+          "Inspection of load-bearing structures",
+          "Diagnostics of engineering systems",
+          "Assessment of foundations and soil base"
+        ]
+      },
+      {
+        "title": "Design",
+        "desc": "We develop design documentation of any complexity using modern BIM technologies. We create functional and aesthetic solutions aligned with client needs and regulations.",
+        "bullets": [
+          "Architectural design",
+          "Structural solutions",
+          "Engineering systems (W&S, HVAC, Electrical)"
+        ]
+      },
+      {
+        "title": "Documentation development",
+        "desc": "We prepare a full set of design and working documentation in accordance with current norms and standards. We support expertise review and obtain required approvals.",
+        "bullets": [
+          "Working documentation",
+          "Estimate & feasibility justification",
+          "Approvals with regulatory authorities"
+        ]
+      },
+      {
+        "title": "Author supervision",
+        "desc": "We ensure construction matches the design documentation. Our specialists visit the site and help resolve issues promptly during implementation.",
+        "bullets": [
+          "Compliance control",
+          "Design changes when necessary",
+          "Consultations at every construction stage"
+        ]
+      }
+    ],
+
+    "extraKicker": "Additional services",
+    "extraTitle": "Extended capabilities",
+    "more": "Learn more",
+    "extraServices": [
+      {
+        "title": "General contracting",
+        "desc": "Turnkey construction management — from start to handover, with quality guarantees and deadline control."
+      },
+      {
+        "title": "Reconstruction & restoration",
+        "desc": "Modernization of existing buildings while preserving architectural value and improving performance."
+      },
+      {
+        "title": "Construction supervision",
+        "desc": "Independent quality control of construction and installation works throughout the project lifecycle."
+      },
+      {
+        "title": "BIM modeling",
+        "desc": "Creation of 3D information models to manage the project efficiently and minimize errors."
+      },
+      {
+        "title": "Cost estimating",
+        "desc": "Professional cost calculation with detailed breakdown of all budget items."
+      },
+      {
+        "title": "Expert consulting",
+        "desc": "Expert support from experienced engineers and architects at every stage of the project."
+      }
+    ],
+
+    "process": {
+      "kicker": "How we work",
+      "title": "A transparent collaboration process",
+      "lead": "We follow a clear methodology that ensures quality and deadlines at every stage.",
+      "items": [
+        { "n": "1", "title": "Consultation", "desc": "We discuss your goals, requirements and expectations" },
+        { "n": "2", "title": "Analysis", "desc": "We review technical documentation and site specifics" },
+        { "n": "3", "title": "Commercial proposal", "desc": "We prepare a detailed estimate and work plan" },
+        { "n": "4", "title": "Implementation", "desc": "We execute the work with quality control at each stage" },
+        { "n": "5", "title": "Delivery", "desc": "We hand over the completed result with full documentation" }
+      ]
+    },
+
+    "why": {
+      "title": "Why clients choose us",
+      "items": [
+        { "title": "On-time delivery", "desc": "Guaranteed completion within agreed timelines" },
+        { "title": "Quality guarantee", "desc": "Official warranty for all types of work" },
+        { "title": "Experienced team", "desc": "200+ qualified specialists" },
+        { "title": "24/7 support", "desc": "Always available to resolve questions" }
+      ]
+    },
+
+    "types": {
+      "kicker": "Facility types",
+      "title": "Projects of any complexity",
+      "lead": "Our experience covers the entire construction industry — from residential complexes to large industrial facilities.",
+      "examples": "Project examples",
+      "items": [
+        {
+          "title": "Residential complexes",
+          "desc": "Design and construction of modern residential buildings with developed infrastructure.",
+          "bullets": ["Apartment buildings", "Townhouses & cottages", "Premium housing"]
+        },
+        {
+          "title": "Commercial facilities",
+          "desc": "Creating functional spaces for business and retail in any format.",
+          "bullets": ["Office centers", "Shopping complexes", "Hotels & hospitality"]
+        },
+        {
+          "title": "Industrial facilities",
+          "desc": "Design of production and warehouse complexes tailored to business specifics.",
+          "bullets": ["Production workshops", "Warehouse complexes", "Logistics centers"]
+        }
+      ],
+      "alsoTitle": "We also work with",
+      "also": [
+        "Educational institutions",
+        "Medical centers",
+        "Sports facilities",
+        "Infrastructure projects"
+      ]
+    },
+
+    "cta": {
+      "titleLine1": "Let’s discuss your project",
+      "titleLine2": "right now",
+      "lead": "Get a free consultation from our experts. We’ll analyze your needs and propose an optimal solution considering budget and timeline.",
+      "metrics": [
+        { "n": "24 hours", "t": "To prepare a commercial proposal" },
+        { "n": "100%", "t": "Compliance with norms & standards" },
+        { "n": "500+", "t": "Successfully delivered projects" }
+      ],
+      "emailLabel": "Email",
+      "officeLabel": "Office",
+      "hoursLabel": "Working hours",
+      "officeValue": "Tashkent, Uzbekistan",
+      "hoursValue": "Mon–Fri: 9:00 - 18:00"
+    }
+  },
+    "industriesPage": {
+    "kicker": "Integrated engineering solutions",
+    "title": "Industry solutions for\nyour business",
+    "lead": "Tailored engineering solutions for every industry. We design facilities of all four complexity categories with maximum efficiency and professionalism.",
+    "btnProjects": "View projects",
+
+    "stats": [
+      { "n": "4", "t": "Complexity categories" },
+      { "n": "15+", "t": "Engineering services" },
+      { "n": "100%", "t": "Integrated approach" },
+      { "n": "24/7", "t": "Technical support" }
+    ],
+
+    "solutionsKicker": "Solutions for all industries",
+    "solutionsTitle": "Comprehensive solutions for\ndifferent industries",
+    "solutionsLead": "We provide a full range of engineering services tailored to the specific needs of each industry",
+    "solutions": [
+      {
+        "title": "Residential real estate",
+        "desc": "Design of residential complexes, apartment buildings and cottage communities with full engineering infrastructure",
+        "tags": ["Architecture", "Engineering", "3D visualization"]
+      },
+      {
+        "title": "Commercial real estate",
+        "desc": "Business centers, shopping malls and office buildings with modern engineering systems",
+        "tags": ["HVAC", "Power supply", "Fire safety"]
+      },
+      {
+        "title": "Industrial & logistics",
+        "desc": "Industrial facilities, warehouses and logistics centers",
+        "tags": ["Technology", "Master planning", "Structures"]
+      },
+      {
+        "title": "Healthcare",
+        "desc": "Medical centers, hospitals and clinics designed in accordance with specialized requirements",
+        "tags": ["Ventilation", "Water supply", "Alarm systems"]
+      },
+      {
+        "title": "Education",
+        "desc": "Schools, universities, kindergartens and educational centers with modern infrastructure",
+        "tags": ["Lighting", "Safety", "Communication"]
+      },
+      {
+        "title": "Hospitality",
+        "desc": "Hotels, resorts and tourism complexes with a high level of comfort",
+        "tags": ["Air conditioning", "Heating", "Gas supply"]
+      }
+    ],
+
+    "servicesKicker": "Full range of services",
+    "servicesTitle": "Comprehensive engineering services\nfor your project",
+    "servicesLead": "We work with all four complexity categories. Professional project teams, flexible approach and high-quality execution",
+    "services": [
+      {
+        "title": "Architectural & construction solutions",
+        "desc": "Development of complete architectural and construction solutions in compliance with regulations and standards"
+      },
+      {
+        "title": "Structural calculations",
+        "desc": "Professional calculations of load-bearing structures, foundations and structural elements"
+      },
+      {
+        "title": "Power supply & electrical systems",
+        "desc": "Design of power supply systems, electrical equipment and lighting"
+      },
+      {
+        "title": "Heating, ventilation & air conditioning",
+        "desc": "Modern HVAC systems to ensure a comfortable indoor climate"
+      },
+      {
+        "title": "Water supply & sewerage",
+        "desc": "Design of water supply, drainage and wastewater treatment systems"
+      },
+      {
+        "title": "Heat & gas supply",
+        "desc": "Engineering solutions for heating and gas supply systems of any complexity"
+      },
+      {
+        "title": "Fire protection & automation",
+        "desc": "Design of fire safety, automation and alarm systems"
+      },
+      {
+        "title": "Communication & security systems",
+        "desc": "Modern communication, telephony and security systems"
+      },
+      {
+        "title": "Master planning & 3D visualization",
+        "desc": "Development of master plans, concept designs and realistic 3D visualizations"
+      }
+    ],
+
+    "why": {
+      "kicker": "Our advantages",
+      "title": "Why choose us",
+      "lead": "Professional expertise, experience and an individual approach to every project",
+      "items": [
+        {
+          "title": "Well-grounded engineering approach",
+          "desc": "Every solution is supported by calculations, regulations and years of engineering experience"
+        },
+        {
+          "title": "High level of service",
+          "desc": "We provide premium engineering services in compliance with international standards"
+        },
+        {
+          "title": "Flexible problem-solving",
+          "desc": "We find optimal solutions even for the most complex technical challenges"
+        },
+        {
+          "title": "Broad team expertise",
+          "desc": "A professional team with deep expertise across all engineering disciplines"
+        },
+        {
+          "title": "4 complexity categories",
+          "desc": "We work with projects of all complexity levels — from simple to unique"
+        },
+        {
+          "title": "End-to-end service",
+          "desc": "From concept to supervision — full project support at every stage"
+        }
+      ]
+    },
+
+    "cta": {
+      "title": "Ready to discuss your project?",
+      "lead": "Contact us for a consultation and a commercial proposal",
+      "btn": "Contact us"
+    }
+  }
+}

@@ -47,7 +47,7 @@ class RequestCreate(BaseModel):
     name: str
     phone: str
     email: str
-    comment: str = ""
+    message: str = ""
 
 
 class RequestResponse(BaseModel):
@@ -63,7 +63,7 @@ async def create_request(data: RequestCreate):
         name=data.name,
         phone=data.phone,
         email=data.email,
-        comment=data.comment,
+        message=data.message,
     )
 
     async with async_session() as session:

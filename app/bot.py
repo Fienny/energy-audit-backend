@@ -23,7 +23,7 @@ def _format_request_message(req: Request, processed_by: str | None = None) -> st
         f"📧 <b>Email:</b> {req.email}\n"
         f"\n"
         f"💬 <b>Комментарий:</b>\n"
-        f"{req.comment or '—'}\n"
+        f"{req.message or '—'}\n"
         f"\n"
         f"{status}"
     )

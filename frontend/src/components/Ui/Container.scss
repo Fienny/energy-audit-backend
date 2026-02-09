@@ -1,0 +1,6 @@
+@use "../../styles/mixins" as *;
+
+.container {
+  width: min(var(--container), calc(100% - (var(--gutter) * 2)));
+  margin: 0 auto;
+}

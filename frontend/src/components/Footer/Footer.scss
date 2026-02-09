@@ -1,0 +1,39 @@
+@use "../../styles/mixins" as *;
+
+.footer {
+  padding: 48px 0 24px;
+  border-top: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 28px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__brand { font-weight: 800; font-size: 18px; }
+  &__desc { margin-top: 10px; color: var(--muted); max-width: 420px; }
+  &__title { font-weight: 700; margin-bottom: 10px; }
+
+  a {
+    display: block;
+    padding: 6px 0;
+    color: var(--muted);
+    &:hover { color: var(--text); }
+  }
+
+  &__muted { margin-top: 10px; color: var(--muted); }
+
+  &__bottom {
+    grid-column: 1 / -1;
+    margin-top: 14px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+  }
+}
