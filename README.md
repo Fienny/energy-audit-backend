@@ -1,14 +1,29 @@
-# Energy Audit Backend
+# Energy Audit
 
-Бэкенд для обработки заявок с формы сайта энергоаудита. При поступлении заявки данные сохраняются в БД и отправляются в Telegram-группу операторам.
+Монорепо: бэкенд + фронтенд сайта энергоаудита. Заявки с формы сохраняются в SQLite и отправляются в Telegram-группу операторам через бота.
 
-## Стек
+## Структура
 
-- **Python 3.11+**
-- **FastAPI** — HTTP API
-- **SQLAlchemy** (async) — ORM
-- **SQLite** + aiosqlite — база данных (файл `db.sqlite3`)
-- **python-telegram-bot** — Telegram бот
+```
+backend/                ← Python бэкенд (FastAPI)
+├── app/
+│   ├── main.py         — FastAPI app, эндпоинты
+│   ├── config.py       — .env переменные
+│   ├── database.py     — SQLAlchemy engine
+│   ├── models.py       — модель Request
+│   └── bot.py          — Telegram бот
+├── Dockerfile
+├── requirements.txt
+└── .env.example
+
+frontend/               ← React фронтенд (Vite)
+├── src/
+│   ├── pages/Contact/  — форма заявки → POST /api/requests
+│   └── ...
+└── package.json
+
+docker-compose.yml      ← запуск всего через Docker
+```
 
 ## Как работает
 
@@ -25,89 +40,47 @@ Telegram бот отправляет сообщение в группу опер
 Сообщение обновляется: показывает кто обработал
 ```
 
-## Поля заявки
-
-| Поле | Тип | Описание |
-|---|---|---|
-| `name` | string | Имя клиента |
-| `phone` | string | Телефон |
-| `email` | string | Электронная почта |
-| `comment` | string | Комментарий / описание проекта |
-| `processed` | bool | Обработана ли заявка (по умолчанию `false`) |
-| `created_at` | datetime | Время создания |
-
 ## API
 
-### `POST /api/requests`
+| Метод | Путь | Описание |
+|---|---|---|
+| `POST` | `/api/requests` | Создать заявку `{name, phone, email, message}` |
+| `GET` | `/health` | Healthcheck |
 
-Создать новую заявку.
+---
 
-```json
-{
-  "name": "Иван Петров",
-  "phone": "+7 999 123-45-67",
-  "email": "ivan@example.com",
-  "comment": "Нужен энергоаудит офиса"
-}
-```
-
-Ответ:
-
-```json
-{
-  "id": 1,
-  "success": true
-}
-```
-
-### `GET /health`
-
-Проверка что сервер работает. Возвращает `{"status": "ok"}`.
-
-## Запуск локально
-
-### 1. Клонировать репозиторий
+## Запуск локально (без Docker)
 
 ```bash
+# 1. Клонировать
 git clone <repo-url>
 cd energy-audit-backend
-```
 
-### 2. Создать виртуальное окружение
-
-```bash
+# 2. Настроить бэкенд
+cd backend
 python3 -m venv venv
 source venv/bin/activate
-```
-
-### 3. Установить зависимости
-
-```bash
 pip install -r requirements.txt
-```
 
-### 4. Настроить переменные окружения
-
-```bash
+# 3. Создать .env
 cp .env.example .env
-```
+# вписать TELEGRAM_BOT_TOKEN и TELEGRAM_CHAT_ID
 
-Открыть `.env` и вставить:
-
-- `TELEGRAM_BOT_TOKEN` — токен бота (получить у [@BotFather](https://t.me/BotFather))
-- `TELEGRAM_CHAT_ID` — ID группы куда бот будет слать заявки
-
-> **Как узнать CHAT_ID группы:** добавьте бота в группу, отправьте любое сообщение, затем откройте `https://api.telegram.org/bot<TOKEN>/getUpdates` — в ответе будет `chat.id` (отрицательное число).
-
-### 5. Запустить
-
-```bash
+# 4. Запустить бэкенд
 uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+# 5. (Второй терминал) Запустить фронтенд
+cd frontend
+npm install
+npm run dev
 ```
 
-БД (`db.sqlite3`) создаётся автоматически при первом запуске.
+> **Как узнать CHAT_ID группы:** добавь бота в группу, отправь любое сообщение,
+> открой `https://api.telegram.org/bot<TOKEN>/getUpdates` — в ответе будет `chat.id` (отрицательное число).
 
-## Деплой на DigitalOcean Droplet
+---
+
+## Деплой на DigitalOcean Droplet (Docker)
 
 ### 1. Подключиться к серверу
 
@@ -115,10 +88,10 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000
 ssh root@<your-droplet-ip>
 ```
 
-### 2. Установить Python
+### 2. Установить Docker
 
 ```bash
-apt update && apt install -y python3 python3-pip python3-venv
+curl -fsSL https://get.docker.com | sh
 ```
 
 ### 3. Склонировать проект
@@ -129,73 +102,68 @@ git clone <repo-url> energy-audit-backend
 cd energy-audit-backend
 ```
 
-### 4. Настроить окружение
+### 4. Создать .env файл
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-nano .env  # вставить токены
+cp backend/.env.example backend/.env
+nano backend/.env
 ```
 
-### 5. Создать systemd-сервис
+Вписать:
 
-```bash
-cat > /etc/systemd/system/energy-audit.service << 'EOF'
-[Unit]
-Description=Energy Audit Backend
-After=network.target
-
-[Service]
-Type=simple
-User=root
-WorkingDirectory=/opt/energy-audit-backend
-Environment=PATH=/opt/energy-audit-backend/venv/bin
-ExecStart=/opt/energy-audit-backend/venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8000
-Restart=always
-RestartSec=5
-
-[Install]
-WantedBy=multi-user.target
-EOF
+```
+TELEGRAM_BOT_TOKEN=123456:ABC-DEF...
+TELEGRAM_CHAT_ID=-100123456789
 ```
 
-### 6. Запустить сервис
+### 5. Запустить
 
 ```bash
-systemctl daemon-reload
-systemctl enable energy-audit
-systemctl start energy-audit
+docker compose up -d --build
 ```
 
-### 7. Проверить
+Готово. Бэкенд доступен на `http://<droplet-ip>:8000`.
+
+### 6. Проверить
 
 ```bash
-systemctl status energy-audit
+# статус контейнера
+docker compose ps
+
+# логи
+docker compose logs -f backend
+
+# healthcheck
 curl http://localhost:8000/health
 ```
 
 ### Полезные команды
 
 ```bash
-systemctl restart energy-audit   # перезапустить
-journalctl -u energy-audit -f    # логи в реальном времени
+docker compose restart backend    # перезапустить
+docker compose logs -f backend    # логи
+docker compose down               # остановить
+docker compose up -d --build      # пересобрать и запустить
+
+# обновить код с GitHub
+cd /opt/energy-audit-backend
+git pull
+docker compose up -d --build
 ```
 
-### (Опционально) Nginx как reverse proxy
+### (Опционально) Nginx + HTTPS
 
-Если нужен домен или HTTPS:
+Если нужен домен:
 
 ```bash
-apt install -y nginx
+apt install -y nginx certbot python3-certbot-nginx
 
 cat > /etc/nginx/sites-available/energy-audit << 'EOF'
 server {
     listen 80;
     server_name your-domain.com;
 
-    location / {
+    location /api/ {
         proxy_pass http://127.0.0.1:8000;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
@@ -205,11 +173,7 @@ EOF
 
 ln -s /etc/nginx/sites-available/energy-audit /etc/nginx/sites-enabled/
 nginx -t && systemctl restart nginx
-```
 
-Для HTTPS — добавить certbot:
-
-```bash
-apt install -y certbot python3-certbot-nginx
+# HTTPS
 certbot --nginx -d your-domain.com
 ```

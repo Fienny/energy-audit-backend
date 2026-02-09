@@ -8,17 +8,21 @@
 
 - **Бэкенд:** Python 3.11+, FastAPI, SQLAlchemy (async), SQLite (aiosqlite), python-telegram-bot
 - **Фронтенд:** React 19, Vite, react-router-dom, i18next, SCSS
-- **Деплой:** DigitalOcean Droplet, uvicorn, systemd
+- **Деплой:** DigitalOcean Droplet, Docker, docker-compose
 
 ## Структура
 
 ```
-app/                          ← бэкенд (FastAPI)
-├── main.py                   — FastAPI app, lifespan, эндпоинты
-├── config.py                 — переменные окружения из .env
-├── database.py               — async engine и session
-├── models.py                 — модель Request (name, phone, email, message, processed, created_at)
-└── bot.py                    — Telegram: отправка заявки + callback кнопки "ОБРАБОТАНО"
+backend/                      ← бэкенд (FastAPI)
+├── app/
+│   ├── main.py               — FastAPI app, lifespan, эндпоинты
+│   ├── config.py             — переменные окружения из .env
+│   ├── database.py           — async engine и session
+│   ├── models.py             — модель Request (name, phone, email, message, processed, created_at)
+│   └── bot.py                — Telegram: отправка заявки + callback кнопки "ОБРАБОТАНО"
+├── Dockerfile                — Docker-образ бэкенда
+├── requirements.txt
+└── .env.example
 
 frontend/                     ← фронтенд (React + Vite)
 ├── src/
@@ -30,6 +34,8 @@ frontend/                     ← фронтенд (React + Vite)
 │   └── locales/              — i18n переводы (ru, en, uz)
 ├── vite.config.js            — proxy /api → localhost:8000 для dev
 └── package.json
+
+docker-compose.yml            — запуск через Docker
 ```
 
 ## Связь фронта и бэка
@@ -43,14 +49,15 @@ frontend/                     ← фронтенд (React + Vite)
 - `POST /api/requests` — создать заявку (body: name, phone, email, message)
 - `GET /health` — healthcheck
 
-## Переменные окружения (.env в корне)
+## Переменные окружения (backend/.env)
 
 - `TELEGRAM_BOT_TOKEN` — токен бота от BotFather
 - `TELEGRAM_CHAT_ID` — ID группы операторов
 
 ## Ключевые решения
 
-- **SQLite** — достаточно для текущей нагрузки, файл `db.sqlite3` в корне
+- **Docker** — деплой через `docker compose up -d --build`
+- **SQLite** — достаточно для текущей нагрузки, файл `data/db.sqlite3` (Docker volume)
 - **Бот через polling** (не webhook) — проще, не требует домена/SSL
 - **Fire-and-forget** отправка в Telegram (`asyncio.create_task`) — не блокирует ответ
 - **CORS разрешён для всех** (`allow_origins=["*"]`)

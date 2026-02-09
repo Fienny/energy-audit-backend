@@ -10,4 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TELEGRAM_BOT_TOKEN: str = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID: str = os.getenv("TELEGRAM_CHAT_ID", "")
 
-DATABASE_URL: str = f"sqlite+aiosqlite:///{BASE_DIR / 'db.sqlite3'}"
+DATABASE_URL: str = os.getenv(
+    "DATABASE_URL",
+    f"sqlite+aiosqlite:///{BASE_DIR / 'data' / 'db.sqlite3'}",
+)
