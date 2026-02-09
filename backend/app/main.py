@@ -21,7 +21,7 @@ async def lifespan(app: FastAPI):
     # Start Telegram bot polling in background
     await bot_app.initialize()
     await bot_app.start()
-    await bot_app.updater.start_polling()
+    await bot_app.updater.start_polling(drop_pending_updates=True)
 
     yield
 
