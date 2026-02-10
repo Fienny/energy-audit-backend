@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Container from "../../components/Ui/Container";
 import Button from "../../components/Ui/Button";
 import Reveal from "../../components/Ui/Reveal/Reveal";
+import useSeo from "../../hooks/useSeo";
 import "./Services.scss";
 
 import videoplayback from "../../image/videoplayback.mp4";
@@ -50,6 +51,11 @@ import zv from "../../image/zv.jpg";
 
 export default function Services() {
   const { t } = useTranslation();
+
+  useSeo({
+    title: "Услуги — проектирование, энергоаудит, строительный контроль",
+    description: "Полный цикл строительных и инжиниринговых услуг: техническое обследование, проектирование, разработка ПСД, BIM-моделирование, авторский надзор.",
+  });
 
   const main = t("servicesPage.mainServices", { returnObjects: true }) || [];
   const extra = t("servicesPage.extraServices", { returnObjects: true }) || [];

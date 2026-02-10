@@ -3,13 +3,18 @@ import { useTranslation } from "react-i18next";
 import Container from "../../components/Ui/Container";
 import Button from "../../components/Ui/Button";
 import Reveal from "../../components/Ui/Reveal/Reveal";
+import useSeo from "../../hooks/useSeo";
 import "./Contact.scss";
-// import qr from "../../image/qr.png";
 
 const API_URL = (import.meta.env.VITE_API_URL || "").replace(/\/+$/, "");
 
 export default function Contact() {
   const { t } = useTranslation();
+
+  useSeo({
+    title: "Контакты — оставить заявку",
+    description: "Свяжитесь с Benka для консультации по проектированию, энергоаудиту и строительному инжинирингу. Ташкент, Узбекистан.",
+  });
 
   const yandexSrc =
     "https://yandex.ru/map-widget/v1/?ll=69.243867%2C41.266974&z=16&pt=69.243867,41.266974,pm2rdm";

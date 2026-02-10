@@ -3,9 +3,15 @@ import { useTranslation } from "react-i18next";
 import Container from "../../components/Ui/Container";
 import Button from "../../components/Ui/Button";
 import Reveal from "../../components/Ui/Reveal/Reveal";
+import useSeo from "../../hooks/useSeo";
 
 export default function Projects() {
   const { t } = useTranslation();
+
+  useSeo({
+    title: "Реализованные проекты",
+    description: "Портфолио реализованных проектов Benka: жилые комплексы, коммерческие и промышленные объекты в Узбекистане.",
+  });
   const items = t("projects.items", { returnObjects: true }) || [];
 
   return (

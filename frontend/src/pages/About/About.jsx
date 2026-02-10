@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Container from "../../components/Ui/Container";
 import Button from "../../components/Ui/Button";
 import Reveal from "../../components/Ui/Reveal/Reveal";
+import useSeo from "../../hooks/useSeo";
 import "./About.scss";
 
 import about from "../../image/about.mp4";
@@ -39,6 +40,11 @@ function StatItem({ valueText, label, start, delay = 0, duration = 3200 }) {
 
 export default function About() {
   const { t } = useTranslation();
+
+  useSeo({
+    title: "О компании Benka — инжиниринг и проектирование",
+    description: "Benka — команда инженеров с 2019 года. Проектирование зданий, энергоаудит, техническое обследование и авторский надзор в Узбекистане.",
+  });
 
   const statsRaw = t("aboutPage.stats", { returnObjects: true });
   const featuresRaw = t("aboutPage.features", { returnObjects: true });

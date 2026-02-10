@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Container from "../../components/Ui/Container";
 import Button from "../../components/Ui/Button";
 import Reveal from "../../components/Ui/Reveal/Reveal";
+import useSeo from "../../hooks/useSeo";
 import "./Industries.scss";
 import industries from "../../image/industries.mp4";
 
@@ -34,6 +35,11 @@ import badge from "../../image/badge.png";
 
 export default function Industries() {
   const { t } = useTranslation();
+
+  useSeo({
+    title: "Отраслевые решения — жильё, коммерция, промышленность",
+    description: "Инжиниринговые решения для жилой и коммерческой недвижимости, промышленности, здравоохранения, образования и гостиничного бизнеса в Узбекистане.",
+  });
 
   // ✅ новые ключи (как на оригинале)
   const statsRaw = t("industriesPage.stats", { returnObjects: true });

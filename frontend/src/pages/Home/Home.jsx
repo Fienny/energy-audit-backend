@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Container from "../../components/Ui/Container";
 import Button from "../../components/Ui/Button";
 import Reveal from "../../components/Ui/Reveal/Reveal";
+import useSeo from "../../hooks/useSeo";
 import "./Home.scss";
 import home from "../../image/home.mp4";
 import one from "../../image/one.mp4";
@@ -40,6 +41,11 @@ const specVideos = [one, two, three];
 
 export default function Home() {
   const { t } = useTranslation();
+
+  useSeo({
+    title: "Проектирование зданий, энергоаудит и инжиниринг",
+    description: "Benka — профессиональное проектирование зданий, энергоаудит, зелёная энергетика и строительный инжиниринг в Ташкенте. 30+ объектов, 6+ лет опыта.",
+  });
 
   const services = t("home.services.items", { returnObjects: true }) || [];
   const reasons = t("home.why.items", { returnObjects: true }) || [];
