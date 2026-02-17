@@ -4,6 +4,7 @@ import Container from "../../components/Ui/Container";
 import Button from "../../components/Ui/Button";
 import Reveal from "../../components/Ui/Reveal/Reveal";
 import useSeo from "../../hooks/useSeo";
+import { PHONE_DISPLAY_ALT, PHONE_HREF, EMAIL, EMAIL_HREF } from "../../config/contacts";
 import "./Services.scss";
 
 import videoplayback from "../../image/videoplayback.mp4";
@@ -416,8 +417,8 @@ const Media = (
                 <Button variant="primary" onClick={() => (window.location.href = "/contact")}>
                   {t("cta.consult")}
                 </Button>
-                <a className="pill" href="tel:+998998892586">
-                  +998 (99) 889 25 86
+                <a className="pill" href={PHONE_HREF}>
+                  {PHONE_DISPLAY_ALT}
                 </a>
               </div>
             </Reveal>
@@ -427,7 +428,7 @@ const Media = (
                 <div className="servicesPage__contactRow">
                   <div className="servicesPage__contactLabel">{t("servicesPage.cta.emailLabel")}</div>
                   <div>
-                    <a href="mailto:info@Benka.uz">info@Benka.uz</a>
+                    <a href={EMAIL_HREF}>{EMAIL}</a>
                   </div>
                 </div>
               </Reveal>

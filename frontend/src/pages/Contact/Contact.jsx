@@ -4,6 +4,7 @@ import Container from "../../components/Ui/Container";
 import Button from "../../components/Ui/Button";
 import Reveal from "../../components/Ui/Reveal/Reveal";
 import useSeo from "../../hooks/useSeo";
+import { PHONE_HREF, PHONE_DISPLAY, EMAIL_HREF, EMAIL, YANDEX_MAP_WIDGET, YANDEX_MAP_LINK } from "../../config/contacts";
 import "./Contact.scss";
 
 const API_URL = (import.meta.env.VITE_API_URL || "").replace(/\/+$/, "");
@@ -16,8 +17,7 @@ export default function Contact() {
     description: "Свяжитесь с Benka для консультации по проектированию, энергоаудиту и строительному инжинирингу. Ташкент, Узбекистан.",
   });
 
-  const yandexSrc =
-    "https://yandex.ru/map-widget/v1/?ll=69.243867%2C41.266974&z=16&pt=69.243867,41.266974,pm2rdm";
+  const yandexSrc = YANDEX_MAP_WIDGET;
 
   const [form, setForm] = useState({
     name: "",
@@ -79,12 +79,12 @@ export default function Contact() {
               <div className="pcard__meta contactMeta">
                 <div>
                   <b>{t("contact.info.phoneLabel")}:</b>{" "}
-                  <a href="tel:+998998892586">(+99899) 889 25 86</a> 
+                  <a href={PHONE_HREF}>{PHONE_DISPLAY}</a> 
                 </div>
 
                 <div className="contactMeta__row">
                   <b>{t("contact.info.emailLabel")}:</b>{" "}
-                  <a href="mailto:info@benka.uz">info@benka.uz</a>
+                  <a href={EMAIL_HREF}>{EMAIL}</a>
                 </div>
 
                 <div className="contactMeta__row">
@@ -183,7 +183,7 @@ export default function Contact() {
               <div className="mapActions">
                 <a
                   className="pillMap"
-                  href="https://yandex.uz/maps/?ll=69.243867%2C41.266974&z=16&pt=69.243867,41.266974,pm2rdm"
+                  href={YANDEX_MAP_LINK}
                   target="_blank"
                   rel="noreferrer"
                 >

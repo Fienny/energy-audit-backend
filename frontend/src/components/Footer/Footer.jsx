@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Container from "../Ui/Container";
+import { PHONE_HREF, PHONE_DISPLAY, EMAIL_HREF, EMAIL } from "../../config/contacts";
 import "./Footer.scss";
 
 const LANGS = ["ru", "uz", "en"];
@@ -32,8 +33,8 @@ export default function Footer() {
         {/* CONTACTS */}
         <div className="footer__col">
           <div className="footer__title">{t("footer.contactsTitle")}</div>
-          <a href="tel:+998998892586">(+99899) 889 25 86</a>
-          <a href="mailto:info@benka.uz">info@benka.uz</a>
+          <a href={PHONE_HREF}>{PHONE_DISPLAY}</a>
+          <a href={EMAIL_HREF}>{EMAIL}</a>
           <div className="footer__muted">{t("footer.address")}</div>
         </div>
 

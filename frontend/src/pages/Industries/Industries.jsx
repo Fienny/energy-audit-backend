@@ -4,6 +4,7 @@ import Container from "../../components/Ui/Container";
 import Button from "../../components/Ui/Button";
 import Reveal from "../../components/Ui/Reveal/Reveal";
 import useSeo from "../../hooks/useSeo";
+import { PHONE_HREF, PHONE_DISPLAY_ALT } from "../../config/contacts";
 import "./Industries.scss";
 import industries from "../../image/industries.mp4";
 
@@ -248,8 +249,8 @@ export default function Industries() {
                 <Button variant="primary" onClick={() => (window.location.href = "/contact")}>
                   {t("industriesPage.cta.btn")}
                 </Button>
-                <a className="pill" href="tel:+998998892586">
-                  +998 99 889 25 86
+                <a className="pill" href={PHONE_HREF}>
+                  {PHONE_DISPLAY_ALT}
                 </a>
               </div>
             </Reveal>

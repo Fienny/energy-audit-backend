@@ -5,6 +5,7 @@ import Container from "../Ui/Container";
 import Button from "../Ui/Button";
 import "./Header.scss";
 import logo from "../../image/header_logo_down4.png";
+import { PHONE_HREF, PHONE_DISPLAY, EMAIL_HREF, EMAIL } from "../../config/contacts";
 const nav = [
   { to: "/", key: "nav.home" },
   { to: "/about", key: "nav.about" },
@@ -181,11 +182,11 @@ export default function Header() {
           </Button>
 
           <div className="menuPanel__contacts">
-            <a className="menuPanel__pill" href="tel:+998998892586">
-              (+99899) 889 25 86
+            <a className="menuPanel__pill" href={PHONE_HREF}>
+              {PHONE_DISPLAY}
             </a>
-            <a className="menuPanel__pill" href="mailto:info@benka.uz">
-              info@benka.uz
+            <a className="menuPanel__pill" href={EMAIL_HREF}>
+              {EMAIL}
             </a>
           </div>
         </div>

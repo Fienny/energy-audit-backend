@@ -4,6 +4,7 @@ import Container from "../../components/Ui/Container";
 import Button from "../../components/Ui/Button";
 import Reveal from "../../components/Ui/Reveal/Reveal";
 import useSeo from "../../hooks/useSeo";
+import { PHONE_HREF, PHONE_DISPLAY, EMAIL_HREF, EMAIL } from "../../config/contacts";
 import "./Home.scss";
 import home from "../../image/home.mp4";
 import one from "../../image/one.mp4";
@@ -293,11 +294,11 @@ const statsData = [
 
           <Reveal variant="up" delay={80}>
             <div className="home__finalBtns">
-              <a className="pill" href="tel:+998998892586">
-                (+99899) 889 25 86
+              <a className="pill" href={PHONE_HREF}>
+                {PHONE_DISPLAY}
               </a>
-              <a className="pill" href="mailto:info@benka.uz">
-                info@benka.uz
+              <a className="pill" href={EMAIL_HREF}>
+                {EMAIL}
               </a>
               <Button variant="primary1" onClick={() => (window.location.href = "/contact")}>
                 {t("cta.contactUs")}
