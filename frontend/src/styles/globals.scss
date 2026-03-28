@@ -59,3 +59,7 @@ a, p, h1, h2, h3, li, div, span {
 input, textarea, button {
   max-width: 100%;
 }
+
+.header {
+  overflow-x: clip; // или hidden
+}

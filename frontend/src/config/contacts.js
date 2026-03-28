@@ -1,9 +1,9 @@
 // Контактные данные компании — единый источник правды.
 // Меняешь здесь — меняется везде на сайте.
 
-export const PHONE_RAW = "+998998892586";
-export const PHONE_DISPLAY = "(+99899) 889 25 86";
-export const PHONE_DISPLAY_ALT = "+998 (99) 889 25 86";
+export const PHONE_RAW = "+99899(+99877) 276 67 67";
+export const PHONE_DISPLAY = "(+99877) 276 67 67";
+export const PHONE_DISPLAY_ALT = "(+99877) 276 67 67";
 export const PHONE_HREF = `tel:${PHONE_RAW}`;
 
 export const EMAIL = "info@benka.uz";

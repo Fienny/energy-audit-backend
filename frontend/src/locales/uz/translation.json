@@ -43,7 +43,8 @@
         { "title": "Loyiha-smeta hujjatlari", "desc": "Zamonaviy standartlarga mos hujjatlar." },
         { "title": "Mualliflik nazorati", "desc": "Loyiha bajarilishini nazorat qilish." },
         { "title": "Xorijiy loyihalarni moslashtirish", "desc": "Mahalliy me’yorlarga moslashtirish." },
-        { "title": "Texnik hamrohlik", "desc": "Qurilish loyihalarini qo‘llab-quvvatlash." }
+        { "title": "Texnik hamrohlik", "desc": "Qurilish loyihalarini qo‘llab-quvvatlash." },
+        { "title": "Energiya auditi", "desc": "Obyektning energiya iste'molini tahlil qilish orqali energiya samaradorligini oshirish va xarajatlarni kamaytirish." }
       ]
     },
 
@@ -256,6 +257,15 @@
           "Loyihaga muvofiqlik nazorati",
           "Zarurat bo‘lsa o‘zgartirishlar kiritish",
           "Qurilishning barcha bosqichlarida maslahat"
+        ]
+      },
+      {
+        "title": "Energiya auditi",
+        "desc": "Obyektning energiya sarfini kompleks tahlil qilamiz, samaradorlikni oshirish va xarajatlarni kamaytirish maqsadida. Energiya yo‘qotish manbalarini aniqlab, optimal yechimlar taklif qilamiz.",
+        "bullets": [
+          "Joriy energiya sarfini tahlil qilish",
+          "Energiya yo‘qotish manbalarini aniqlash",
+          "Energiya samaradorligini oshirish bo‘yicha tavsiyalar"
         ]
       }
     ],

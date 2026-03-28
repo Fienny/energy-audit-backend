@@ -43,7 +43,8 @@
         { "title": "Design & estimate documentation", "desc": "Documentation according to modern standards." },
         { "title": "Author supervision", "desc": "Control of project implementation." },
         { "title": "Foreign project adaptation", "desc": "Adaptation to local regulations." },
-        { "title": "Technical support", "desc": "Support of construction projects." }
+        { "title": "Technical support", "desc": "Support of construction projects." },
+        { "title": "Energy Audit", "desc": "Analysis of a facility’s energy consumption to improve energy efficiency and reduce costs." }
       ]
     },
 
@@ -257,6 +258,15 @@
           "Compliance control",
           "Design changes when necessary",
           "Consultations at every construction stage"
+        ]
+      },
+      {
+        "title": "Energy Audit",
+        "desc": "We conduct a comprehensive analysis of a facility’s energy consumption to improve efficiency and reduce costs. We identify sources of energy loss and provide optimal solutions.",
+        "bullets": [
+          "Analysis of current energy consumption",
+          "Identification of energy loss sources",
+          "Recommendations for improving energy efficiency"
         ]
       }
     ],

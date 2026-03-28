@@ -13,12 +13,14 @@ import dicas from "../../image/dicas.jpg";
 import dicas2 from "../../image/dicas2.jpg";
 import dicas3 from "../../image/dicas3.jpeg";
 import dicas4 from "../../image/dicas4.png";
+import dicas5 from "../../image/12333.webp";
 
 
 import magnifier from "../../image/magnifier.png";
 import compas from "../../image/compas.png";
 import seoreport from "../../image/seoreport.png";
 import selection from "../../image/selection.png";
+import energyIcon from "../../image/energyIcon.png";
 
 import helmet from "../../image/helmet.png";
 import repair from "../../image/repair.png";
@@ -66,7 +68,7 @@ export default function Services() {
   const also = t("servicesPage.types.also", { returnObjects: true }) || [];
   const metrics = t("servicesPage.cta.metrics", { returnObjects: true }) || [];
 
-  const svcicons = [magnifier, compas, seoreport, selection];
+  const svcicons = [magnifier, compas, seoreport, selection, energyIcon];
 
   // ✅ иконки для "Расширенные возможности" (6 шт)
   const icons = [helmet, repair, sticker, d, calculator, communication];
@@ -81,7 +83,7 @@ export default function Services() {
   const alsoIcons = [institute, medical, ball, factory];
 
 
-  const svcImages = [dicas, dicas2, dicas3, dicas4];
+  const svcImages = [dicas, dicas2, dicas3, dicas4, dicas5];
 
     const objImages = [jk, km, zv];
 
