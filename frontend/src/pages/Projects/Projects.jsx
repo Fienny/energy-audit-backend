@@ -9,8 +9,9 @@ export default function Projects() {
   const { t } = useTranslation();
 
   useSeo({
-    title: "Реализованные проекты",
-    description: "Портфолио реализованных проектов Benka: жилые комплексы, коммерческие и промышленные объекты в Узбекистане.",
+    title: t("seo.projects.title"),
+    description: t("seo.projects.description"),
+    keywords: t("seo.projects.keywords"),
   });
   const items = t("projects.items", { returnObjects: true }) || [];
 

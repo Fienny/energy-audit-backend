@@ -1,4 +1,41 @@
 {
+  "seo": {
+    "home": {
+      "title": "Bino loyihalash, energiya auditi va injiniring",
+      "description": "Benka — Toshkentda professional bino loyihalash, energiya auditi, yashil energetika va qurilish injiniringi. 30+ bajarilgan obyekt, 6+ yillik tajriba.",
+      "keywords": "bino loyihalash, energiya auditi, yashil energetika, qurilish, Toshkent, O'zbekiston, texnik tekshiruv, loyiha-smeta hujjatlari, injiniring, BIM, mualliflik nazorati, Benka"
+    },
+    "about": {
+      "title": "Benka haqida — injiniring va loyihalash kompaniyasi",
+      "description": "Benka — 2019-yildan beri muhandislar jamoasi. O'zbekistonda bino loyihalash, energiya auditi, texnik tekshiruv va mualliflik nazorati.",
+      "keywords": "Benka, kompaniya haqida, injiniring kompaniyasi, Toshkent loyihalash, muhandislar jamoasi, qurilish injiniringi O'zbekiston"
+    },
+    "services": {
+      "title": "Xizmatlar — loyihalash, energiya auditi, qurilish nazorati",
+      "description": "Qurilish va injiniring xizmatlarining to'liq sikli: texnik tekshiruv, loyihalash, hujjatlar ishlab chiqish, BIM-modellashtirish, mualliflik nazorati.",
+      "keywords": "texnik tekshiruv, bino loyihalash, hujjatlar, BIM-modellashtirish, mualliflik nazorati, qurilish nazorati, energiya auditi, Benka"
+    },
+    "industries": {
+      "title": "Sohaviy yechimlar — turar joy, tijorat, sanoat",
+      "description": "Turar joy va tijorat ko'chmas mulki, sanoat, sog'liqni saqlash, ta'lim va mehmonxona biznesi uchun injiniring yechimlari.",
+      "keywords": "sohaviy yechimlar, turar joy, tijorat ko'chmas mulki, sanoat, injiniring O'zbekiston, obyekt loyihalash"
+    },
+    "projects": {
+      "title": "Bajarilgan loyihalar",
+      "description": "Benka bajarilgan loyihalar portfoliosi: turar joy majmualari, tijorat va sanoat obyektlari.",
+      "keywords": "portfolio, bajarilgan loyihalar, turar joy majmualari, tijorat obyektlari, sanoat obyektlari, Benka O'zbekiston"
+    },
+    "contact": {
+      "title": "Kontaktlar — so'rov qoldirish",
+      "description": "Bino loyihalash, energiya auditi va qurilish injiniringi bo'yicha maslahat uchun Benka bilan bog'laning. Toshkent, O'zbekiston.",
+      "keywords": "Benka kontaktlari, loyihalash so'rovi, muhandislik maslahati, energiya auditi Toshkent, Benka bilan bog'lanish"
+    },
+    "og": {
+      "title": "Benka — Loyihalash, energiya auditi va injiniring",
+      "description": "O'zbekistonda professional bino loyihalash, energiya auditi va qurilish injiniringi. 30+ bajarilgan obyekt."
+    }
+  },
+
   "common": {
     "more": "Batafsil"
   },

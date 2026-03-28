@@ -13,8 +13,9 @@ export default function Contact() {
   const { t } = useTranslation();
 
   useSeo({
-    title: "Контакты — оставить заявку",
-    description: "Свяжитесь с Benka для консультации по проектированию, энергоаудиту и строительному инжинирингу. Ташкент, Узбекистан.",
+    title: t("seo.contact.title"),
+    description: t("seo.contact.description"),
+    keywords: t("seo.contact.keywords"),
   });
 
   const yandexSrc = YANDEX_MAP_WIDGET;

@@ -38,8 +38,9 @@ export default function Industries() {
   const { t } = useTranslation();
 
   useSeo({
-    title: "Отраслевые решения — жильё, коммерция, промышленность",
-    description: "Инжиниринговые решения для жилой и коммерческой недвижимости, промышленности, здравоохранения, образования и гостиничного бизнеса в Узбекистане.",
+    title: t("seo.industries.title"),
+    description: t("seo.industries.description"),
+    keywords: t("seo.industries.keywords"),
   });
 
   // ✅ новые ключи (как на оригинале)

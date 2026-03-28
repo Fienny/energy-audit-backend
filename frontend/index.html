@@ -42,6 +42,37 @@
 
     <!-- Theme -->
     <meta name="theme-color" content="#0a1628" />
+
+    <!-- Hreflang (default, updated dynamically per page) -->
+    <link rel="alternate" hreflang="ru" href="https://benka.uz/?lang=ru" />
+    <link rel="alternate" hreflang="en" href="https://benka.uz/?lang=en" />
+    <link rel="alternate" hreflang="uz" href="https://benka.uz/?lang=uz" />
+    <link rel="alternate" hreflang="x-default" href="https://benka.uz/" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Benka",
+      "url": "https://benka.uz",
+      "logo": "https://benka.uz/favicon.png",
+      "description": "Professional building design, energy audit and construction engineering in Uzbekistan",
+      "foundingDate": "2019",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tashkent",
+        "addressCountry": "UZ"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+99877-276-67-67",
+        "contactType": "customer service",
+        "availableLanguage": ["Russian", "Uzbek", "English"]
+      },
+      "sameAs": []
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

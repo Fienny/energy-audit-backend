@@ -43,8 +43,9 @@ export default function About() {
   const { t } = useTranslation();
 
   useSeo({
-    title: "О компании Benka — инжиниринг и проектирование",
-    description: "Benka — команда инженеров с 2019 года. Проектирование зданий, энергоаудит, техническое обследование и авторский надзор в Узбекистане.",
+    title: t("seo.about.title"),
+    description: t("seo.about.description"),
+    keywords: t("seo.about.keywords"),
   });
 
   const statsRaw = t("aboutPage.stats", { returnObjects: true });

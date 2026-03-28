@@ -44,8 +44,9 @@ export default function Home() {
   const { t } = useTranslation();
 
   useSeo({
-    title: "Проектирование зданий, энергоаудит и инжиниринг",
-    description: "Benka — профессиональное проектирование зданий, энергоаудит, зелёная энергетика и строительный инжиниринг в Ташкенте. 30+ объектов, 6+ лет опыта.",
+    title: t("seo.home.title"),
+    description: t("seo.home.description"),
+    keywords: t("seo.home.keywords"),
   });
 
   const services = t("home.services.items", { returnObjects: true }) || [];

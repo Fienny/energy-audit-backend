@@ -1,4 +1,41 @@
 {
+  "seo": {
+    "home": {
+      "title": "Building Design, Energy Audit & Engineering",
+      "description": "Benka — professional building design, energy audit, green energy and construction engineering in Tashkent. 30+ completed projects, 6+ years of experience.",
+      "keywords": "building design, energy audit, green energy, construction, Tashkent, Uzbekistan, technical inspection, engineering, BIM, author supervision, Benka"
+    },
+    "about": {
+      "title": "About Benka — Engineering & Design Company",
+      "description": "Benka — a team of engineers since 2019. Building design, energy audit, technical inspection and author supervision in Uzbekistan.",
+      "keywords": "Benka, about company, engineering company, design Tashkent, engineering team, construction engineering Uzbekistan"
+    },
+    "services": {
+      "title": "Services — Design, Energy Audit, Construction Supervision",
+      "description": "Full-cycle construction and engineering services: technical inspection, design, documentation development, BIM modeling, author supervision.",
+      "keywords": "technical inspection, building design, documentation, BIM modeling, author supervision, construction supervision, energy audit, Benka"
+    },
+    "industries": {
+      "title": "Industry Solutions — Residential, Commercial, Industrial",
+      "description": "Engineering solutions for residential and commercial real estate, industry, healthcare, education and hospitality in Uzbekistan.",
+      "keywords": "industry solutions, residential real estate, commercial real estate, industrial, engineering Uzbekistan, facility design"
+    },
+    "projects": {
+      "title": "Completed Projects",
+      "description": "Benka's portfolio of completed projects: residential complexes, commercial and industrial facilities in Uzbekistan.",
+      "keywords": "portfolio, completed projects, residential complexes, commercial facilities, industrial facilities, Benka Uzbekistan"
+    },
+    "contact": {
+      "title": "Contacts — Submit a Request",
+      "description": "Contact Benka for consultation on building design, energy audit and construction engineering. Tashkent, Uzbekistan.",
+      "keywords": "Benka contacts, design request, engineering consultation, energy audit Tashkent, contact Benka"
+    },
+    "og": {
+      "title": "Benka — Design, Energy Audit & Engineering",
+      "description": "Professional building design, energy audit and construction engineering in Uzbekistan. 30+ completed projects."
+    }
+  },
+
   "common": {
     "more": "Learn more"
   },

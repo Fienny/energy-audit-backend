@@ -56,8 +56,9 @@ export default function Services() {
   const { t } = useTranslation();
 
   useSeo({
-    title: "Услуги — проектирование, энергоаудит, строительный контроль",
-    description: "Полный цикл строительных и инжиниринговых услуг: техническое обследование, проектирование, разработка ПСД, BIM-моделирование, авторский надзор.",
+    title: t("seo.services.title"),
+    description: t("seo.services.description"),
+    keywords: t("seo.services.keywords"),
   });
 
   const main = t("servicesPage.mainServices", { returnObjects: true }) || [];
